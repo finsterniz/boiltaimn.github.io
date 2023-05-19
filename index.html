@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Secret Website</title>
+    <title>Fins的小屋</title>
     <style>
-        #content {
-            display: none;
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f8f8;
+            padding: 20px 0;
+        }
+        .main {
+            text-align: center;
+            margin: 50px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <div id="content">
-        <h1>Fins的密信邮箱:</h1>
-        <p>这里是信息</p>
-        <p>这里是换行</p>
+    <div class="header">
+        <h1>Fins的小屋</h1>
     </div>
-
-    <script>
-        var secretAnswer = "123";
-        var userAnswer = prompt("请输入0-9里你最喜欢的一个数字");
-
-        if (userAnswer === secretAnswer) {
-            document.getElementById('content').style.display = 'block';
-        } else {
-            alert("不准偷看别人的消息哦👀");
-        }
-    </script>
+    <div class="nav">
+        <a href="#home">首页</a>
+        <a href="#about">关于</a>
+        <a href="#knowledge">知识库</a>
+        <a href="#contact">联系我</a>
+        <a href="messagebox.html">密信</a>
+    </div>
+    <div id="home" class="main">
+        <h2>你仿佛来到了知识的荒漠</h2>
+        <img src="img/pro-log.png" alt="Desert Oasis" />
+    </div>
+    <div id="about" class="main">
+        <!-- Insert about info here -->
+    </div>
+    <div id="knowledge" class="main">
+        <!-- Insert knowledge articles here -->
+    </div>
+    <div id="contact" class="main">
+        <!-- Insert contact info here -->
+    </div>
 </body>
 </html>
